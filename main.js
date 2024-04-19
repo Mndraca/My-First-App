@@ -1,7 +1,7 @@
 // Function to FactorialN
 
 function calculateFactorial() {
-    let number = parseInt(document.getElementById("numberInput").value);
+    let number = (document.getElementById("numberInput").value);
     let factorial = 1;
     for (let i = 1; i <= number; i++) {
         factorial *= i;
@@ -26,8 +26,8 @@ function reverseText() {
 }
   // function to Loop Demo
 function displaySequence() {
-    let startNumber = parseInt(document.getElementById("startNumber").value);
-    let endNumber = parseInt(document.getElementById("endNumber").value);
+    let startNumber = (document.getElementById("startNumber").value);
+    let endNumber = (document.getElementById("endNumber").value);
     let sequence = "";
 
     if (startNumber <= endNumber) {
