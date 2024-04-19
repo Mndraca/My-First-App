@@ -1,9 +1,9 @@
 // Function to FactorialN
 
 function calculateFactorial() {
-    var number = parseInt(document.getElementById("numberInput").value);
-    var factorial = 1;
-    for (var i = 1; i <= number; i++) {
+    let number = parseInt(document.getElementById("numberInput").value);
+    let factorial = 1;
+    for (let i = 1; i <= number; i++) {
         factorial *= i;
     }
     document.getElementById("factorialResult").textContent = "Factorial of " + number + " is: " + factorial;
@@ -11,8 +11,8 @@ function calculateFactorial() {
 
 // Function to reverse text
 function reverseText() {
-    var text = document.getElementById("textReverseInput").value;
-    var reversedText = text.split("").reverse().join("");
+    let text = document.getElementById("textReverseInput").value;
+    let reversedText = text.split("").reverse().join("");
     document.getElementById("textReverseResult").textContent = "Reversed Text: " + reversedText;
 }
 
@@ -20,22 +20,22 @@ function reverseText() {
 
   // function to Uppercase
   function convertToUppercase() {
-    var text = document.getElementById("textInput").value;
-    var uppercaseText = text.toUpperCase();
+    let text = document.getElementById("textInput").value;
+    let uppercaseText = text.toUpperCase();
     document.getElementById("uppercaseResult").textContent = "Uppercase Text: " + uppercaseText;
 }
   // function to Loop Demo
 function displaySequence() {
-    var startNumber = parseInt(document.getElementById("startNumber").value);
-    var endNumber = parseInt(document.getElementById("endNumber").value);
-    var sequence = "";
+    let startNumber = parseInt(document.getElementById("startNumber").value);
+    let endNumber = parseInt(document.getElementById("endNumber").value);
+    let sequence = "";
 
     if (startNumber <= endNumber) {
-        for (var i = startNumber; i <= endNumber; i++) {
+        for (let i = startNumber; i <= endNumber; i++) {
             sequence += i + " ";
         }
     } else {
-        for (var i = startNumber; i >= endNumber; i--) {
+        for (let i = startNumber; i >= endNumber; i--) {
             sequence += i + " ";
         }
     }
