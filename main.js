@@ -19,26 +19,50 @@ function reverseText() {
 // You can add more functions for additional tools
 
   // function to Uppercase
-  function convertToUppercase() {
+  
+    function capitalizeFirstLetter() {
+    
     let text = document.getElementById("textInput").value;
-    let uppercaseText = text.toUpperCase();
-    document.getElementById("uppercaseResult").textContent = "Uppercase Text: " + uppercaseText;
+    let firstLetterUpperCase = text.charAt(0).toUpperCase() + text.slice(1);
+    document.getElementById("uppercaseResult").textContent = "Uppercase First letter Text: " + firstLetterUpperCase;
 }
   // function to Loop Demo
 function displaySequence() {
-    let startNumber = (document.getElementById("startNumber").value);
-    let endNumber = (document.getElementById("endNumber").value);
+    let startNumber = Number(document.getElementById("startNumber").value);
+    let endNumber = Number(document.getElementById("endNumber").value);
     let sequence = "";
+
+ 
+
+
 
     if (startNumber <= endNumber) {
         for (let i = startNumber; i <= endNumber; i++) {
             sequence += i + " ";
+           
         }
     } else {
         for (let i = startNumber; i >= endNumber; i--) {
             sequence += i + " ";
+        
+            
         }
+        
     }
 
     document.getElementById("sequenceResult").textContent = "Sequence: " + sequence;
+          
+}
+ // function to Capitalize After Dot
+
+ function capitalizeAfterDot() {
+    // Split the string by dot
+    let text = document.getElementById("capitalizeAfterDot").value.split('.');
+    
+    // Capitalize the first letter after each dot
+    for (let i = 0; i < text.length; i++) {
+        text[i] = text[i].charAt(0).toUpperCase() + text[i].slice(1);
+    }
+    let capitalizeAfterDotText = text.join('.');
+    document.getElementById("CapitalizeAfterDotResult").textContent = "Capitalize After Dot Text: " + capitalizeAfterDotText ;
 }
