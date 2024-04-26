@@ -66,3 +66,6 @@ function displaySequence() {
     let capitalizeAfterDotText = text.join('.');
     document.getElementById("CapitalizeAfterDotResult").textContent = "Capitalize After Dot Text: " + capitalizeAfterDotText ;
 }
+
+
+
